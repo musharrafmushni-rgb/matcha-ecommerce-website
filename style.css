@@ -54,10 +54,10 @@ body {
     cursor: pointer;
 }
 
-/* Hero Section ஸ்டைல் */
+/* Hero Section Style*/
 .hero {
     width: 100%;
-    /* Navbar-க்கு கீழே இருந்து தொடங்க வேண்டும் என்பதால் padding-top அதிகரிக்கப்பட்டுள்ளது */
+   
     padding-top: 80px; 
 }
 
@@ -100,7 +100,7 @@ body {
     background-color: #4caf50;
 }
 .hero-background {
-    background-color: #eaede4; /* லேசான பச்சை/சாம்பல் நிறம் (ஸ்கிரீன்ஷாட்டில் உள்ளது போல) */
+    background-color: #eaede4;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,7 +122,7 @@ body {
 }
 
 .hero-content .highlight {
-    color: #4caf50; /* பச்சை நிறம் */
+    color: #4caf50; 
 }
 
 .hero-content p {
@@ -151,15 +151,15 @@ body {
 .hero-image {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* படத்தை வலது பக்கம் சேர்த்து வைக்க */
+    justify-content: flex-end;
     position: relative;
 }
 
 .hero-image img {
     width: 100%;
-    max-width: 550px; /* படத்தின் அளவு */
-    height: 600px; /* உயரம் */
-    object-fit: cover; /* படம் சிதையாமல் இருக்க */
-    border-radius: 20px; /* வட்டமாக இல்லாமல், விளிம்புகள் மட்டும் வளைந்திருக்க */
+    max-width: 550px; 
+    height: 600px; 
+    object-fit: cover;
+    border-radius: 20px; 
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
