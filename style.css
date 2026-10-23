@@ -275,7 +275,7 @@ body {
 
 /* Lifestyle Section */
 .lifestyle-section {
-    padding: 20px 5% 80px 5%; /* இடது மற்றும் வலது பக்க இடைவெளியை 10%-ல் இருந்து 5% ஆகக் குறைத்துள்ளேன் (இதனால் கார்டு பக்கவாட்டில் விரிவடையும்) */
+    padding: 20px 5% 80px 5%; 
     background-color: #ffffff; 
     display: flex;
     justify-content: center;
@@ -289,13 +289,13 @@ body {
     justify-content: space-between;
     padding: 40px;
     width: 100%;
-    /* max-width: 1100px;  <-- இதை நீக்கிவிட்டேன் அல்லது அதிகரிக்கலாம் */
-    max-width: 1400px; /* இப்போது அதிகபட்ச அகலத்தை 1400px ஆக அதிகரித்துள்ளேன் */
+    
+    max-width: 1400px; 
     gap: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* இடது பக்கம் உள்ள உரை */
+
 .lifestyle-content {
     flex: 1;
 }
@@ -321,7 +321,7 @@ body {
     flex: 2;
     display: flex;
     gap: 10px;
-    height: 250px; /* படங்களின் உயரம் */
+    height: 250px; 
 
 }
 
@@ -329,20 +329,19 @@ body {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-radius: 12px; /* படங்களின் மூலைகளும் வளைந்திருக்கும் */
+    border-radius: 12px; 
    
 }
 
 /* Products & Matcha Journey Section */
 .products-journey-section {
     display: flex;
-    flex-direction: column; /* மேலிருந்து கீழாக (Column) மாற்ற */
+    flex-direction: column; 
     padding: 60px 15%;
     background-color: #f9f9f7;
     gap: 40px;
 }
 
-/* --- Products (மேலே) --- */
 .favorites-container {
     text-align: center;
 }
@@ -488,7 +487,7 @@ body {
     color: #2c4a2e;
 }
 
-/* வட்ட வடிவ படம் */
+
 .journey-img {
     width: 280px;
     height: 280px;
@@ -497,7 +496,333 @@ body {
     position: absolute;
     right: 50px;
     top: 50%;
-    transform: translateY(-50%); /* நேராக நடுவில் வைக்க */
+    transform: translateY(-50%); 
     z-index: 1;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+/* =========================================
+   7. Reviews Section
+   ========================================= */
+.reviews-section {
+    padding: 80px 10%;
+    background-color: #f9f9f7; 
+}
+
+.reviews-container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+   
+    max-width: 900px; 
+    margin: 0 auto; 
+    width: 100%;
+}
+
+
+.reviews-image {
+    flex: 1;
+    max-height: 450px; 
+}
+
+.reviews-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews-content {
+    flex: 1.2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.reviews-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #1a2f1c;
+    line-height: 1.2;
+}
+
+.arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.arrow-btn:hover {
+    background: #f0f0f0;
+}
+
+.quote-icon {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #2c4a2e;
+    line-height: 0.5;
+    margin-bottom: 20px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.reviewer {
+    font-weight: bold;
+    color: #1a2f1c;
+    margin-bottom: 30px;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.dot.active {
+    background-color: #2c4a2e;
+}
+
+.reviews-image {
+    flex: 1;
+}
+
+.reviews-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   8. Newsletter Section
+   ========================================= */
+.newsletter-section {
+    padding: 0 10% 80px 10%;
+    background-color: #f9f9f7;
+}
+
+.newsletter-container {
+    background-color: #b8c9a7; 
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-content {
+    flex: 1;
+    max-width: 400px;
+    z-index: 2;
+}
+
+.newsletter-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #1a2f1c;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.newsletter-form {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    padding: 5px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background-color: #2c4a2e;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #1a2f1c;
+}
+
+.newsletter-image {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.newsletter-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* =========================================
+   9. Footer
+   ========================================= */
+.main-footer {
+    background-color: #2c4a2e;
+    color: white;
+    padding: 60px 10% 20px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-brand {
+    flex: 1.5;
+}
+
+.footer-brand h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #d1d8d1;
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 250px;
+    line-height: 1.6;
+}
+/* Social Icons ஸ்டைல் */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: white;
+    color: #2c4a2e !important; 
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    color: #d1d8d1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+.payment-icons span {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 5px;
 }
